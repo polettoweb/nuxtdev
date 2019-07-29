@@ -1,5 +1,5 @@
 <template>
-  <li class="expcard bg-blue-500" data-cy="expcard">
+  <li class="expcard" data-cy="expcard">
     <svg
       class="ion-ios-circle-filled text-copy-primary"
       xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,5 @@
 <template>
-  <section v-if="expDetails !== null" class="resume__container container-inner mx-auto">
+  <section class="resume__container container-inner mx-auto">
     <div class="experience__container flex flex-col">
       <h1>Experience</h1>
       <p class="experience__intro text-copy-primary" data-cy="experience__intro">
@@ -46,7 +46,7 @@ export default {
     position: absolute;
     width: 2px;
     height: 90%;
-    background-color: #3182ce;
+    background-color: var(--bg-background-tertiary);
     left: 50%;
     @media (max-width: 767px) {
       left: 96%;
@@ -69,6 +69,7 @@ export default {
         width: calc(50% - 30px);
         height: auto;
         position: relative;
+        background-color: var(--bg-background-secondary);
         transition: all 0.5s cubic-bezier(0.17, 0.67, 0.5, 1);
 
         @media (max-width: 767px) {

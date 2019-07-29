@@ -65,7 +65,7 @@ a:hover {
   @apply text-green-800;
 }
 
-nav .active {
+nav .nuxt-link-active {
   font-weight: bold;
   border-color: var(--text-copy-primary);
   @apply border-b;

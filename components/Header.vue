@@ -1,5 +1,5 @@
 <template>
-  <header class>
+  <header>
     <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
       <div>
         <div>
