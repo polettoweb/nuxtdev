@@ -58,5 +58,16 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  generate: {
+    routes: function() {
+      return axios("https:/marcopoletto.eu/api/v1/blog").then(
+        res => {
+          const routes = [];
+          res.data.map(item => routes.push("/blog/" + item.slug));
+          return routes;
+        }
+      );
+    }
   }
 }
